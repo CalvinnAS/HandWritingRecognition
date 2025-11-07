@@ -8,13 +8,6 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, T
 from mltu.preprocessors import ImageReader
 from mltu.transformers import ImageResizer, LabelIndexer, LabelPadding, ImageShowCV2
 from mltu.augmentors import RandomBrightness, RandomRotate, RandomErodeDilate, RandomSharpen
-# from mltu.annotations.images import CVImage
-
-# from mltu.tensorflow.dataProvider import DataProvider
-# from mltu.tensorflow.losses import CTCloss
-# from mltu.tensorflow.callbacks import Model2onnx, TrainLogger
-# from mltu.tensorflow.metrics import CWERMetric
-
 from mltu.dataProvider import DataProvider
 from mltu.losses import CTCloss
 from mltu.callbacks import Model2onnx, TrainLogger
