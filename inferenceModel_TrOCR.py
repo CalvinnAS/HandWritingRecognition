@@ -1,3 +1,5 @@
+# TrOCR Model
+
 import cv2
 import numpy as np
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel
@@ -56,7 +58,7 @@ if __name__ == "__main__":
     import cv2
     import os
 
-    image_path = "test.png"
+    image_path = "test.jpeg"
     if os.path.exists(image_path):
         image = cv2.imread(image_path)
         text = recognizer.predict(image)
